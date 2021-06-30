@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blast The Crooked Brain</title>
+    <script src="bullet.js"></script>
+    <script src="enemy.js"></script>
+    <script src="particle.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            background-image: url("images/bg.jpeg");
+            justify-content: center;
+        }
+
+        canvas {
+            padding: 0;
+            margin: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #title {
+            padding: 5px;
+            position: absolute;
+        }
+    </style>
+    <br>
+    <div class="fixed inset-0 flex items-center justify-center" id="ModalEl">
+        <div class="bg-white max-w-md w-full p-6 text-center">
+            <h1 class="text-4xl font-bold" id="score">0</h1>
+            <p class="text-sm text-gray-700">Points</p>
+            <h1 class="text-4xl font-bold" id="highscore">0</h1>
+            <p class="text-sm text-gray-700">Highscore</p>
+            <br>
+            <div>
+                <button class="bg-blue-500 text-white w-full py-3 rounded-full" id="strt_game">Start Game</button>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-5xl font-bold" id="title">Blast The Crooked Brain</h1>
+    <canvas id="canvas" width="1200" height="600"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
