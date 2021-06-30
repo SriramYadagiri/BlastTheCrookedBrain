@@ -1,7 +1,7 @@
 class Enemy{
     constructor(x, y, radius){
         this.image = new Image();
-        this.image.src = "images/enemy.png";
+        this.image.src = "enemy.png";
         this.x = x;
         this.y = y;
         this.r = radius;
