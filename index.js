@@ -8,7 +8,7 @@ var score = 0;
 var scores = [];
 
 var playerImg = new Image();
-playerImg.src = "images/nithyananda.png";
+playerImg.src = "nithyananda.png";
 
 var keys = [];
 
@@ -47,7 +47,7 @@ class Gun {
     };
 }
 
-var g1 = new Gun("images/pistol.png", canvas.width/2, canvas.height/2, 10, 50);
+var g1 = new Gun("pistol.png", canvas.width/2, canvas.height/2, 10, 50);
 
 var spawnE = setInterval(spawnEnemy, 1500);
 
